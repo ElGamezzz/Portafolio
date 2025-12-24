@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<header class="sticky top-5 z-10 mx-4 flex items-center justify-between whitespace-nowrap rounded-lg border border-solid border-white/10 bg-background-dark/80 px-10 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<div class="size-4">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">José Delgado</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#projects">Mis Proyectos</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#contact">Contacto</a>
+</nav>
+<a class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 text-white transition-colors hover:bg-white/20" href="#">
+<span aria-label="GitHub Profile" class="material-symbols-outlined text-xl">code</span>
+</a>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-10 sm:py-20">
+<div class="@container">
+<div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
+<div class="w-full flex-shrink-0 bg-center bg-no-repeat aspect-square bg-cover rounded-lg @[864px]:w-64 @[864px]:h-64" data-alt="Portrait of a person smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi5wMiAczyp03DzkXeY61j2jQLTJqdHKbCdFqgZt9OKyBqQeA6hxxIyQ7MRO9JRaGv5ZZvhByl1GP_Oq8MXncah31-la3wWU-9DZfy9G77gant1CVuDzAZGiSnZ8pAG8nQhm-9y5qJbVl1S0MoMeoACi2Xc-s8dUn1uC1-sR4YSk_qOA6vihjsUHnayecznTtDAv_A1mQChhrygHppoaBUb7QC2dvkQYYerfhptaCX5OkcFRovVuTD4YbViEIp_fqCaj0959vzr-U");'></div>
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                              José Sebastián Delgado Gámez
+                                            </h1>
+<h2 class="text-white/90 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                              Software Engineer &amp; Designer. I build intuitive, high-performance web applications that solve real-world problems.
+                                            </h2>
+</div>
+<a class="flex w-fit min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] transition-colors hover:bg-primary/90" href="#projects">
+<span class="truncate">Ver mis proyectos</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-10 sm:py-16" id="projects">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Proyectos</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3 rounded-lg bg-white/5 p-4 transition-colors hover:bg-white/10">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Abstract blue and purple gradient background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGF1OzYSIyVLJOpVEDx9wURtdmrfHyK6k3Z4tup5mw6Dv3FOWK5fADt4V1wrf4zA1_cLHsEXU4lkczXySppRol7Rhh9YL0bnxgRPgW5EpTB19r4JXKpg3Gt_GFu9UWP4_03A2XL_JBXjH5JsGHXvrN-0wU9ebY2qASoMx5HBfj32O12TJ9pWMahvanL0_-GIdtCY5fk6Ful9DLKg4RlZvSSo4XPltYxoD4csfJvh0e8uc3xruFjr2_iSSuYrLw-p45hKuUj5NIDjI");'></div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Civilab-VR</p>
+<p class="text-[#92a4c9] text-sm font-normal leading-normal mt-1">A brief description of the project, highlighting the problem it solves and its key features.</p>
+<p class="text-primary/70 text-sm font-normal leading-normal mt-2">Tech: React, Node.js, PostgreSQL</p>
+</div>
+</div>
+
+
+</section>
+<section class="py-10 sm:py-16" id="contact">
+  <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+    Ponte en contacto
+  </h2>
+  <div class="p-4">
+    <div class="rounded-lg bg-white/5 p-6 sm:p-8">
+      <p class="text-center text-[#92a4c9] mb-6">
+        ¿Quieres hablar conmigo o colaborar en un proyecto? Aquí tienes mis enlaces directos:
+      </p>
+      
+      <!-- Contenedor de enlaces con mismo espaciado -->
+      <div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
+        
+        <!-- Correo -->
+        <a href="mailto:tuemail@ejemplo.com"
+           class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors">
+          <span class="material-symbols-outlined">mail</span>
+          <span>Correo</span>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/tuusuario"
+           target="_blank"
+           class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors">
+          <span class="material-symbols-outlined">business_center</span>
+          <span>LinkedIn</span>
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/tuusuario"
+           target="_blank"
+           class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors">
+          <span class="material-symbols-outlined">code</span>
+          <span>GitHub</span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="mt-auto px-10 py-5 text-center text-sm text-[#92a4c9]">
+<p>© 2025 José Delgado. Todos los derechos reservados.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
